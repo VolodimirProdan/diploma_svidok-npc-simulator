@@ -1,0 +1,28 @@
+{
+  "id": "s7_open",
+  "nameUk": "S7 · Без підкупу (контроль)",
+  "descriptionUk": "Та сама крадіжка кубка, що в S7 · Підкуп, але очевидицю ніхто не підкуповує",
+  "whatChecksUk": "Контроль для S7: покриття слуху без обіцянки мовчати",
+  "modes": ["Observer"],
+  "variants": ["V0", "V1", "V2", "V3", "V4"],
+  "recommendedVariants": ["V0", "V4"],
+  "map": "default",
+  "population": "default",
+  "features": { "social": true, "combat": false, "life": false },
+  "start": { "day": 1, "time": "06:00" },
+  "durationTicks": 960,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "fillerPerNpcPerHour": 6 },
+  "script": [
+    {
+      "tick": 240,
+      "type": "theft",
+      "actor": "ostap",
+      "target": "marta",
+      "item": "silver_cup",
+      "zone": "market",
+      "forcedWitnesses": ["halyna"]
+    }
+  ],
+  "experiment": { "seeds": [1, 2, 3], "metrics": ["coverage", "T50", "secretBlocked", "promiseBreaks"] }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "s7_frame",
+  "nameUk": "S7 · Підстава",
+  "descriptionUk": "Уночі Остап краде кубок у Марти й підкидає його в хату Рибаків, щоб підставити Степана. Марта зранку бачить, що кубка нема",
+  "whatChecksUk": "Чи заарештують невинного Степана за чутками про знахідку; валідатор V4 вимагає c ≥ 0.9 і щоб подія вказувала саме на ціль",
+  "modes": ["Observer"],
+  "variants": ["V0", "V1", "V2", "V3", "V4"],
+  "recommendedVariants": ["V1", "V4"],
+  "map": "default",
+  "population": "default",
+  "features": { "social": true, "combat": false, "life": false },
+  "start": { "day": 1, "time": "05:00" },
+  "durationTicks": 960,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "fillerPerNpcPerHour": 6 },
+  "script": [
+    { "tick": 0, "type": "set_culprit", "actor": "ostap", "target": "stepan" },
+    {
+      "tick": 10,
+      "type": "theft",
+      "target": "marta",
+      "item": "silver_cup",
+      "zone": "market",
+      "forcedWitnesses": ["marta"]
+    },
+    { "tick": 12, "type": "plant", "actor": "ostap", "target": "stepan", "item": "silver_cup" }
+  ],
+  "experiment": { "seeds": [1, 2, 3], "metrics": ["itemsFound", "wrongArrest", "rightArrest", "noGroundsRejected"] }
+}

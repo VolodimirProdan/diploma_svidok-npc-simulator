@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Svidok.Llm</RootNamespace>
+    <AssemblyName>Svidok.Llm</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.Tokenizers" Version="2.0.1" />
+    <PackageReference Include="Microsoft.ML.Tokenizers.Data.O200kBase" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Svidok.Core\Svidok.Core.csproj" />
+  </ItemGroup>
+
+</Project>

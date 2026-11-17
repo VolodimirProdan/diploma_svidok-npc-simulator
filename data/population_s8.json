@@ -1,0 +1,456 @@
+{
+  "npcs": [
+    {
+      "id": "petro",
+      "name": "Петро",
+      "role": "Headman",
+      "home": "headman_house",
+      "work": "square",
+      "talkativeness": 0.4,
+      "bio": "Розважливий, за порядок у селищі",
+      "gender": "m"
+    },
+    {
+      "id": "olena",
+      "name": "Олена",
+      "role": "Peasant",
+      "home": "headman_house",
+      "work": "market",
+      "talkativeness": 0.7,
+      "bio": "Дружина старости, любить новини",
+      "gender": "f"
+    },
+    {
+      "id": "marta",
+      "name": "Марта",
+      "role": "Trader",
+      "home": "house_2",
+      "work": "market",
+      "talkativeness": 0.8,
+      "bio": "Балакуча, усе помічає, не любить чужинців",
+      "gender": "f"
+    },
+    {
+      "id": "ivan",
+      "name": "Іван",
+      "role": "Peasant",
+      "home": "house_2",
+      "work": "warehouse",
+      "talkativeness": 0.3,
+      "bio": "Мовчазний вантажник",
+      "gender": "m"
+    },
+    {
+      "id": "hanna",
+      "name": "Ганна",
+      "role": "Peasant",
+      "home": "house_2",
+      "work": "tavern",
+      "talkativeness": 0.7,
+      "bio": "Донька Марти, працює в корчмі",
+      "gender": "f"
+    },
+    {
+      "id": "mykola",
+      "name": "Микола",
+      "role": "Smith",
+      "home": "house_3",
+      "work": "forge",
+      "talkativeness": 0.3,
+      "bio": "Суворий, не вірить пліткам",
+      "gender": "m"
+    },
+    {
+      "id": "oksana",
+      "name": "Оксана",
+      "role": "Peasant",
+      "home": "house_3",
+      "work": "market",
+      "talkativeness": 0.6,
+      "bio": "Дружина коваля",
+      "gender": "f"
+    },
+    {
+      "id": "taras",
+      "name": "Тарас",
+      "role": "Peasant",
+      "home": "house_3",
+      "work": "forge",
+      "talkativeness": 0.5,
+      "bio": "Син коваля, підмайстер",
+      "gender": "m"
+    },
+    {
+      "id": "stepan",
+      "name": "Степан",
+      "role": "Peasant",
+      "home": "house_4",
+      "work": "pond",
+      "talkativeness": 0.4,
+      "bio": "Рибалка",
+      "gender": "m"
+    },
+    {
+      "id": "halyna",
+      "name": "Галина",
+      "role": "Trader",
+      "home": "house_4",
+      "work": "market",
+      "talkativeness": 0.6,
+      "bio": "Продає рибу, сперечається з Мартою",
+      "gender": "f"
+    },
+    {
+      "id": "bohdan",
+      "name": "Богдан",
+      "role": "Innkeeper",
+      "home": "tavern",
+      "work": "tavern",
+      "talkativeness": 0.6,
+      "bio": "Хазяйновитий, рахує кожну монету",
+      "gender": "m"
+    },
+    {
+      "id": "solomiia",
+      "name": "Соломія",
+      "role": "Peasant",
+      "home": "tavern",
+      "work": "tavern",
+      "talkativeness": 0.7,
+      "bio": "Служниця в корчмі",
+      "gender": "f"
+    },
+    {
+      "id": "andrii",
+      "name": "Андрій",
+      "role": "Guard",
+      "home": "guard_tower",
+      "work": "square",
+      "talkativeness": 0.4,
+      "bio": "Старший вартовий, сумлінний",
+      "gender": "m"
+    },
+    {
+      "id": "vasyl",
+      "name": "Василь",
+      "role": "Guard",
+      "home": "guard_tower",
+      "work": "warehouse",
+      "talkativeness": 0.3,
+      "bio": "Нічний вартовий",
+      "gender": "m"
+    },
+    {
+      "id": "ostap",
+      "name": "Остап",
+      "role": "Peasant",
+      "home": "house_3",
+      "work": "market",
+      "talkativeness": 0.5,
+      "bio": "Має борги, нервовий",
+      "gender": "m"
+    },
+    {
+      "id": "yurko",
+      "name": "Юрко",
+      "role": "Trader",
+      "home": "house_6",
+      "work": "market",
+      "talkativeness": 0.5,
+      "bio": "Мандрує ярмарками, знає ціни",
+      "gender": "m"
+    },
+    {
+      "id": "dmytro",
+      "name": "Дмитро",
+      "role": "Peasant",
+      "home": "house_4",
+      "work": "pond",
+      "talkativeness": 0.4,
+      "bio": "Рибалка, друг Степана",
+      "gender": "m"
+    },
+    {
+      "id": "kateryna",
+      "name": "Катерина",
+      "role": "Peasant",
+      "home": "headman_house",
+      "work": "square",
+      "talkativeness": 0.6,
+      "bio": "Сестра старости",
+      "gender": "f"
+    },
+    {
+      "id": "luka",
+      "name": "Лука",
+      "role": "Peasant",
+      "home": "house_6",
+      "work": "warehouse",
+      "talkativeness": 0.3,
+      "bio": "Комірник складу",
+      "gender": "m"
+    },
+    {
+      "id": "orysia",
+      "name": "Орися",
+      "role": "Peasant",
+      "home": "house_4",
+      "work": "market",
+      "talkativeness": 0.7,
+      "bio": "Молода, усім довіряє",
+      "gender": "f"
+    },
+    {
+      "id": "fedir",
+      "name": "Федір",
+      "role": "Peasant",
+      "home": "house_3",
+      "work": "square",
+      "talkativeness": 0.4,
+      "bio": "Старий, згадує минуле",
+      "gender": "m"
+    },
+    {
+      "id": "yaryna",
+      "name": "Ярина",
+      "role": "Peasant",
+      "home": "house_2",
+      "work": "tavern",
+      "talkativeness": 0.6,
+      "bio": "Кухарка в корчмі",
+      "gender": "f"
+    },
+    {
+      "id": "roman",
+      "name": "Роман",
+      "role": "Peasant",
+      "home": "house_5",
+      "work": "forge",
+      "talkativeness": 0.4,
+      "bio": "Носить вугілля в кузню",
+      "gender": "m"
+    },
+    {
+      "id": "khrystia",
+      "name": "Христя",
+      "role": "Peasant",
+      "home": "headman_house",
+      "work": "market",
+      "talkativeness": 0.8,
+      "bio": "Головна пліткарка селища",
+      "gender": "f"
+    },
+    {
+      "id": "maksym",
+      "name": "Максим",
+      "role": "Peasant",
+      "home": "house_5",
+      "work": "field",
+      "talkativeness": 0.5,
+      "bio": "Хлібороб, батько родини Шевченків, працьовитий і впертий",
+      "gender": "m"
+    },
+    {
+      "id": "nadiia",
+      "name": "Надія",
+      "role": "Peasant",
+      "home": "house_5",
+      "work": "market",
+      "talkativeness": 0.7,
+      "bio": "Дружина Максима, торгує городиною, любить поговорити",
+      "gender": "f"
+    },
+    {
+      "id": "hryts",
+      "name": "Гриць",
+      "role": "Peasant",
+      "home": "house_5",
+      "work": "field",
+      "talkativeness": 0.6,
+      "bio": "Син Максима, задиркуватий парубок, легко лізе в бійку",
+      "gender": "m"
+    },
+    {
+      "id": "pavlo",
+      "name": "Павло",
+      "role": "Peasant",
+      "home": "house_6",
+      "work": "mill",
+      "talkativeness": 0.4,
+      "bio": "Мірошник, скупий і підозріливий, рахує кожну мірку борошна",
+      "gender": "m"
+    },
+    {
+      "id": "zinaida",
+      "name": "Зінаїда",
+      "role": "Peasant",
+      "home": "house_6",
+      "work": "mill",
+      "talkativeness": 0.6,
+      "bio": "Дружина мірошника, добра, але боїться чоловіка",
+      "gender": "f"
+    },
+    {
+      "id": "ilko",
+      "name": "Ілько",
+      "role": "Peasant",
+      "home": "house_7",
+      "work": "forest",
+      "talkativeness": 0.3,
+      "bio": "Лісник, відлюдник, знає кожну стежку в лісі",
+      "gender": "m"
+    },
+    {
+      "id": "vira",
+      "name": "Віра",
+      "role": "Peasant",
+      "home": "house_7",
+      "work": "field",
+      "talkativeness": 0.5,
+      "bio": "Дружина лісника, знахарка, лікує травами",
+      "gender": "f"
+    }
+  ],
+  "extra": [
+    {
+      "id": "zakhar",
+      "name": "Захар",
+      "role": "Traveler",
+      "home": "road",
+      "work": "square",
+      "talkativeness": 0.2,
+      "bio": "Чужинець з червоною хусткою",
+      "gender": "m"
+    }
+  ],
+  "friends": [
+    [
+      "marta",
+      "khrystia"
+    ],
+    [
+      "hanna",
+      "solomiia"
+    ],
+    [
+      "stepan",
+      "dmytro"
+    ],
+    [
+      "taras",
+      "roman"
+    ],
+    [
+      "olena",
+      "oksana"
+    ],
+    [
+      "andrii",
+      "petro"
+    ],
+    [
+      "ivan",
+      "luka"
+    ],
+    [
+      "orysia",
+      "yaryna"
+    ],
+    [
+      "maksym",
+      "stepan"
+    ],
+    [
+      "nadiia",
+      "olena"
+    ],
+    [
+      "hryts",
+      "taras"
+    ],
+    [
+      "pavlo",
+      "luka"
+    ],
+    [
+      "zinaida",
+      "oksana"
+    ],
+    [
+      "ilko",
+      "dmytro"
+    ],
+    [
+      "vira",
+      "yaryna"
+    ]
+  ],
+  "family": [
+    {
+      "a": "petro",
+      "b": "olena",
+      "aIsToB": "чоловік",
+      "bIsToA": "дружина"
+    },
+    {
+      "a": "petro",
+      "b": "kateryna",
+      "aIsToB": "брат",
+      "bIsToA": "сестра"
+    },
+    {
+      "a": "marta",
+      "b": "hanna",
+      "aIsToB": "мати",
+      "bIsToA": "донька"
+    },
+    {
+      "a": "mykola",
+      "b": "oksana",
+      "aIsToB": "чоловік",
+      "bIsToA": "дружина"
+    },
+    {
+      "a": "mykola",
+      "b": "taras",
+      "aIsToB": "батько",
+      "bIsToA": "син"
+    },
+    {
+      "a": "oksana",
+      "b": "taras",
+      "aIsToB": "мати",
+      "bIsToA": "син"
+    },
+    {
+      "a": "maksym",
+      "b": "nadiia",
+      "aIsToB": "чоловік",
+      "bIsToA": "дружина"
+    },
+    {
+      "a": "maksym",
+      "b": "hryts",
+      "aIsToB": "батько",
+      "bIsToA": "син"
+    },
+    {
+      "a": "nadiia",
+      "b": "hryts",
+      "aIsToB": "мати",
+      "bIsToA": "син"
+    },
+    {
+      "a": "pavlo",
+      "b": "zinaida",
+      "aIsToB": "чоловік",
+      "bIsToA": "дружина"
+    },
+    {
+      "a": "ilko",
+      "b": "vira",
+      "aIsToB": "чоловік",
+      "bIsToA": "дружина"
+    }
+  ]
+}

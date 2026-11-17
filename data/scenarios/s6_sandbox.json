@@ -1,0 +1,132 @@
+{
+  "id": "s6",
+  "nameUk": "Пісочниця",
+  "descriptionUk": "Демонстрація на захисті: усі механіки ввімкнені, грає людина",
+  "whatChecksUk": "Демонстрація методу: крадіжка, слух, обман корчмаря, підкуп, підстава, бійка",
+  "modes": [
+    "Observer",
+    "Player"
+  ],
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3",
+    "V4"
+  ],
+  "recommendedVariants": [
+    "V4"
+  ],
+  "map": "default",
+  "population": "default",
+  "extraNpcs": [
+    "zakhar"
+  ],
+  "features": {
+    "social": true,
+    "combat": true,
+    "life": false
+  },
+  "start": {
+    "day": 1,
+    "time": "09:00"
+  },
+  "durationTicks": 1440,
+  "player": {
+    "x": 23,
+    "y": 15,
+    "inventory": [
+      "apple"
+    ],
+    "coins": 12
+  },
+  "quests": [
+    {
+      "id": "q_chest",
+      "giver": "bohdan",
+      "titleUk": "Принести скриню зі складу",
+      "requiredItem": "chest",
+      "reward": 10,
+      "initialState": "NotTaken"
+    },
+    {
+      "id": "q_ring",
+      "giver": "kateryna",
+      "titleUk": "Повернути срібний перстень",
+      "requiredItem": "ring",
+      "reward": 8,
+      "initialState": "NotTaken"
+    }
+  ],
+  "items": [
+    {
+      "id": "fish",
+      "owner": "stepan"
+    },
+    {
+      "id": "pie",
+      "owner": "yaryna"
+    },
+    {
+      "id": "wine",
+      "owner": "bohdan"
+    },
+    {
+      "id": "ring",
+      "owner": "yurko"
+    },
+    {
+      "id": "apple",
+      "owner": "olena"
+    }
+  ],
+  "overrides": {
+    "rumorsEnabled": true,
+    "fillerPerNpcPerHour": 6
+  },
+  "script": [
+    {
+      "tick": 180,
+      "type": "spawn",
+      "actor": "zakhar"
+    }
+  ],
+  "experiment": {
+    "seeds": [
+      1
+    ],
+    "metrics": []
+  },
+  "jobs": [
+    {
+      "zone": "forge",
+      "employer": "mykola",
+      "titleUk": "Допомогти Миколі в кузні",
+      "pay": 3
+    },
+    {
+      "zone": "pond",
+      "employer": "stepan",
+      "titleUk": "Наловити риби зі Степаном",
+      "pay": 2
+    },
+    {
+      "zone": "warehouse",
+      "employer": "ivan",
+      "titleUk": "Перенести мішки на складі",
+      "pay": 2
+    },
+    {
+      "zone": "tavern",
+      "employer": "bohdan",
+      "titleUk": "Помити посуд у корчмі",
+      "pay": 2
+    },
+    {
+      "zone": "market",
+      "employer": "marta",
+      "titleUk": "Постояти за прилавком на ринку",
+      "pay": 2
+    }
+  ]
+}

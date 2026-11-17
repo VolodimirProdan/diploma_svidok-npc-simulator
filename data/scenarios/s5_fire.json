@@ -1,0 +1,19 @@
+{
+  "id": "s5",
+  "nameUk": "Пожежа в кузні",
+  "descriptionUk": "Реакція на гучну подію, яку чують крізь стіни, і вплив затримки моделі",
+  "whatChecksUk": "H5: час реакції, p50/p95 затримки, розподіл дій",
+  "modes": ["Observer"],
+  "variants": ["V0", "V3", "V4"],
+  "recommendedVariants": ["V0", "V3", "V4"],
+  "map": "default",
+  "population": "default",
+  "start": { "day": 1, "time": "13:00" },
+  "durationTicks": 180,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "rumorsEnabled": true, "fillerPerNpcPerHour": 6 },
+  "script": [
+    { "tick": 60, "type": "fire", "zone": "forge" }
+  ],
+  "experiment": { "seeds": [1, 2, 3], "metrics": ["reactions", "latency"] }
+}

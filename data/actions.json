@@ -1,0 +1,340 @@
+[
+  {
+    "action": "ignore",
+    "nameUk": "Ігнорувати",
+    "params": [],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "нічого",
+    "durationTicks": 0
+  },
+  {
+    "action": "say",
+    "nameUk": "Сказати",
+    "params": [
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "репліка в діалозі або над головою",
+    "durationTicks": 0
+  },
+  {
+    "action": "go_to",
+    "nameUk": "Піти до",
+    "params": [
+      "zone"
+    ],
+    "cMin": 0.2,
+    "who": "all",
+    "effectUk": "іде в зону",
+    "durationTicks": 0,
+    "requiresZone": true
+  },
+  {
+    "action": "investigate",
+    "nameUk": "Перевірити",
+    "params": [
+      "zone",
+      "eventRef"
+    ],
+    "cMin": 0.3,
+    "who": "all",
+    "effectUk": "іде в зону події, стоїть 10 тиків",
+    "durationTicks": 10,
+    "requiresEventRef": true
+  },
+  {
+    "action": "hide_valuables",
+    "nameUk": "Сховати цінне",
+    "params": [
+      "eventRef"
+    ],
+    "cMin": 0.4,
+    "who": "all",
+    "effectUk": "іде додому, 20 тиків",
+    "durationTicks": 20,
+    "requiresEventRef": true
+  },
+  {
+    "action": "warn",
+    "nameUk": "Попередити",
+    "params": [
+      "target",
+      "eventRef"
+    ],
+    "cMin": 0.4,
+    "who": "all",
+    "effectUk": "іде до цілі й передає запис",
+    "durationTicks": 0,
+    "requiresEventRef": true,
+    "requiresTarget": true
+  },
+  {
+    "action": "report_to_guard",
+    "nameUk": "Повідомити варту",
+    "params": [
+      "eventRef"
+    ],
+    "cMin": 0.5,
+    "who": "non_guards",
+    "effectUk": "попереджає найближчого вартового",
+    "durationTicks": 0,
+    "requiresEventRef": true
+  },
+  {
+    "action": "shout_alarm",
+    "nameUk": "Підняти тривогу",
+    "params": [
+      "eventRef",
+      "say"
+    ],
+    "cMin": 0.7,
+    "who": "all",
+    "effectUk": "крик з текстом",
+    "durationTicks": 1,
+    "requiresEventRef": true
+  },
+  {
+    "action": "flee",
+    "nameUk": "Втекти",
+    "params": [
+      "zone"
+    ],
+    "cMin": 0.6,
+    "who": "all",
+    "effectUk": "біжить у зону зі швидкістю ×2",
+    "durationTicks": 0,
+    "requiresZone": true
+  },
+  {
+    "action": "help_fire",
+    "nameUk": "Гасити пожежу",
+    "params": [
+      "zone"
+    ],
+    "cMin": 0.6,
+    "who": "all",
+    "effectUk": "іде до вогню, 30 тиків",
+    "durationTicks": 30,
+    "requiresZone": true
+  },
+  {
+    "action": "close_shop",
+    "nameUk": "Зачинити крамницю",
+    "params": [
+      "eventRef"
+    ],
+    "cMin": 0.5,
+    "who": "traders",
+    "effectUk": "уходить з ринку додому до 18:00",
+    "durationTicks": 0,
+    "requiresEventRef": true
+  },
+  {
+    "action": "arrest",
+    "nameUk": "Затримати",
+    "params": [
+      "target",
+      "eventRef"
+    ],
+    "cMin": 0.9,
+    "who": "guards",
+    "effectUk": "іде до цілі, подія arrest, ціль стоїть 60 тиків",
+    "durationTicks": 0,
+    "requiresEventRef": true,
+    "requiresTarget": true,
+    "maxTargetDistance": 30
+  },
+  {
+    "action": "give_item",
+    "nameUk": "Віддати предмет",
+    "params": [
+      "target",
+      "item"
+    ],
+    "cMin": 0,
+    "who": "item_owner",
+    "effectUk": "подія give_item",
+    "durationTicks": 1,
+    "requiresTarget": true,
+    "requiresItem": true
+  },
+  {
+    "action": "give_reward",
+    "nameUk": "Видати нагороду",
+    "params": [
+      "questId"
+    ],
+    "cMin": 1.0,
+    "who": "quest_giver",
+    "effectUk": "подія reward_given, монети гравцю",
+    "durationTicks": 1,
+    "requiresQuest": true
+  },
+  {
+    "action": "refuse",
+    "nameUk": "Відмовити",
+    "params": [
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "репліка",
+    "durationTicks": 0
+  },
+  {
+    "action": "end_talk",
+    "nameUk": "Обірвати розмову",
+    "params": [
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "перестає говорити з гравцем на пів години",
+    "durationTicks": 0,
+    "game": true
+  },
+  {
+    "action": "demand_payment",
+    "nameUk": "Вимагати плату",
+    "params": [
+      "amount",
+      "item",
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "називає ціну в монетах (amount); якщо вказано item — віддасть його після оплати",
+    "durationTicks": 0,
+    "game": true
+  },
+  {
+    "action": "keep_secret",
+    "nameUk": "Пообіцяти мовчати",
+    "params": [
+      "eventRef",
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "більше нікому не розповідає про подію eventRef",
+    "durationTicks": 0,
+    "requiresEventRef": true,
+    "game": true
+  },
+  {
+    "action": "treat",
+    "nameUk": "Пригостити",
+    "params": [
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "дає гравцеві поїсти",
+    "durationTicks": 0,
+    "game": true
+  },
+  {
+    "action": "give_quest",
+    "nameUk": "Видати завдання",
+    "params": [
+      "questId",
+      "say"
+    ],
+    "cMin": 0,
+    "who": "quest_giver",
+    "effectUk": "доручає гравцеві своє завдання",
+    "durationTicks": 0,
+    "game": true
+  },
+  {
+    "action": "accept_trade",
+    "nameUk": "Погодитися на обмін",
+    "params": [
+      "item",
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "міняє свій предмет item на запропонований гравцем",
+    "durationTicks": 0,
+    "game": true
+  },
+  {
+    "action": "banish",
+    "nameUk": "Вигнати з селища",
+    "params": [
+      "target",
+      "eventRef",
+      "say"
+    ],
+    "cMin": 0.7,
+    "who": "guards_headman",
+    "effectUk": "виганяє гравця за околицю на 4 години",
+    "durationTicks": 0,
+    "requiresTarget": true,
+    "game": true
+  },
+  {
+    "action": "fine",
+    "nameUk": "Оштрафувати",
+    "params": [
+      "target",
+      "amount",
+      "eventRef",
+      "say"
+    ],
+    "cMin": 0.5,
+    "who": "guards",
+    "effectUk": "забирає в гравця amount монет",
+    "durationTicks": 0,
+    "requiresTarget": true,
+    "game": true
+  },
+  {
+    "action": "attack",
+    "nameUk": "Вдарити",
+    "params": [
+      "target",
+      "say"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "б'є ціль: мінус 2–4 здоров'я",
+    "durationTicks": 0,
+    "requiresTarget": true,
+    "maxTargetDistance": 20,
+    "game": true
+  },
+  {
+    "action": "search",
+    "nameUk": "Обшукати",
+    "params": [
+      "target",
+      "eventRef",
+      "item",
+      "say"
+    ],
+    "cMin": 0.3,
+    "who": "all",
+    "effectUk": "підходить і обшукує ціль; якщо знаходить вкрадене — забирає власнику і кличе варту",
+    "durationTicks": 0,
+    "requiresTarget": true,
+    "maxTargetDistance": 30,
+    "game": true
+  },
+  {
+    "action": "approach_player",
+    "nameUk": "Підійти до гравця",
+    "params": [
+      "say",
+      "eventRef"
+    ],
+    "cMin": 0,
+    "who": "all",
+    "effectUk": "сам іде до гравця і заводить розмову; say — з чого почнеш, reason — навіщо йдеш",
+    "durationTicks": 0,
+    "game": true
+  }
+]

@@ -1,0 +1,485 @@
+[
+  {
+    "type": "arrive",
+    "nameUk": "Прийшов до місця",
+    "promptUk": "персонаж прийшов до місця",
+    "visibility": "visual",
+    "loudness": 0,
+    "importance": 0.05,
+    "background": true,
+    "fields": [
+      "actor",
+      "zone"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "work",
+    "nameUk": "Працює",
+    "promptUk": "персонаж працює",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.05,
+    "background": true,
+    "fields": [
+      "actor",
+      "zone"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "eat",
+    "nameUk": "Їсть",
+    "promptUk": "персонаж їсть",
+    "visibility": "visual",
+    "loudness": 0.2,
+    "importance": 0.03,
+    "background": true,
+    "fields": [
+      "actor",
+      "zone",
+      "item"
+    ],
+    "distortable": [
+      "item"
+    ]
+  },
+  {
+    "type": "greet",
+    "nameUk": "Привітався",
+    "promptUk": "персонаж привітався",
+    "visibility": "both",
+    "loudness": 0.4,
+    "importance": 0.03,
+    "background": true,
+    "fields": [
+      "actor",
+      "target",
+      "text"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "buy",
+    "nameUk": "Купив",
+    "promptUk": "персонаж щось купив",
+    "visibility": "both",
+    "loudness": 0.5,
+    "importance": 0.15,
+    "background": true,
+    "fields": [
+      "actor",
+      "target",
+      "item",
+      "price"
+    ],
+    "distortable": [
+      "item",
+      "price"
+    ]
+  },
+  {
+    "type": "talk",
+    "nameUk": "Розмова",
+    "promptUk": "персонажі розмовляють",
+    "visibility": "both",
+    "loudness": 0.6,
+    "importance": 0.05,
+    "background": true,
+    "fields": [
+      "actor",
+      "target",
+      "text"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "theft",
+    "nameUk": "Крадіжка",
+    "promptUk": "хтось таємно забрав чужий предмет",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.9,
+    "background": false,
+    "fields": [
+      "actor",
+      "item",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor",
+      "item",
+      "zone"
+    ]
+  },
+  {
+    "type": "shout",
+    "nameUk": "Крик",
+    "promptUk": "хтось голосно кричить",
+    "visibility": "audio",
+    "loudness": 2.0,
+    "importance": 0.6,
+    "background": false,
+    "fields": [
+      "actor",
+      "text"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  },
+  {
+    "type": "attack",
+    "nameUk": "Напад",
+    "promptUk": "хтось напав на іншого",
+    "visibility": "both",
+    "loudness": 1.5,
+    "importance": 1.0,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor",
+      "target",
+      "zone"
+    ]
+  },
+  {
+    "type": "fire",
+    "nameUk": "Пожежа",
+    "promptUk": "почалася пожежа",
+    "visibility": "both",
+    "loudness": 2.0,
+    "importance": 1.0,
+    "background": false,
+    "visionMultiplier": 2.0,
+    "ignoresNight": true,
+    "fields": [
+      "zone"
+    ],
+    "distortable": [
+      "zone"
+    ]
+  },
+  {
+    "type": "give_item",
+    "nameUk": "Передав предмет",
+    "promptUk": "хтось передав предмет",
+    "visibility": "visual",
+    "loudness": 0.5,
+    "importance": 0.4,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "item"
+    ],
+    "distortable": [
+      "item"
+    ]
+  },
+  {
+    "type": "quest_given",
+    "nameUk": "Видав завдання",
+    "promptUk": "персонаж видав завдання",
+    "visibility": "both",
+    "loudness": 0.6,
+    "importance": 0.5,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "questId"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "quest_completed",
+    "nameUk": "Завдання виконано",
+    "promptUk": "завдання виконано",
+    "visibility": "visual",
+    "loudness": 0.5,
+    "importance": 0.7,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "questId"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "reward_given",
+    "nameUk": "Видав нагороду",
+    "promptUk": "персонаж видав нагороду",
+    "visibility": "visual",
+    "loudness": 0.5,
+    "importance": 0.6,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "questId",
+      "coins"
+    ],
+    "distortable": [
+      "coins"
+    ]
+  },
+  {
+    "type": "stranger_arrived",
+    "nameUk": "Прибув чужинець",
+    "promptUk": "у селище прибув чужинець",
+    "visibility": "visual",
+    "loudness": 0,
+    "importance": 0.5,
+    "background": false,
+    "fields": [
+      "actor",
+      "zone"
+    ],
+    "distortable": [
+      "zone"
+    ]
+  },
+  {
+    "type": "arrest",
+    "nameUk": "Затримання",
+    "promptUk": "вартовий когось затримав",
+    "visibility": "both",
+    "loudness": 1.2,
+    "importance": 0.9,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "reason"
+    ],
+    "distortable": [
+      "target"
+    ]
+  },
+  {
+    "type": "storm_warning",
+    "nameUk": "Попередження про грозу",
+    "promptUk": "хтось попереджає про грозу",
+    "visibility": "audio",
+    "loudness": 1.5,
+    "importance": 0.3,
+    "background": false,
+    "fields": [
+      "actor",
+      "text"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "give_coins",
+    "nameUk": "Дав монети",
+    "promptUk": "хтось дав комусь монети",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.4,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  },
+  {
+    "type": "threat",
+    "nameUk": "Погроза",
+    "promptUk": "хтось погрожував іншому",
+    "visibility": "both",
+    "loudness": 1.2,
+    "importance": 0.6,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor",
+      "target"
+    ]
+  },
+  {
+    "type": "item_found",
+    "nameUk": "Знайшли предмет",
+    "promptUk": "у чиїйсь хаті знайшли предмет (target — господар хати)",
+    "visibility": "visual",
+    "loudness": 0.8,
+    "importance": 0.8,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "item",
+      "zone"
+    ],
+    "distortable": [
+      "target",
+      "item"
+    ]
+  },
+  {
+    "type": "banish",
+    "nameUk": "Вигнання",
+    "promptUk": "когось вигнали з селища",
+    "visibility": "both",
+    "loudness": 1.2,
+    "importance": 0.7,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  },
+  {
+    "type": "fine",
+    "nameUk": "Штраф",
+    "promptUk": "вартовий оштрафував когось",
+    "visibility": "visual",
+    "loudness": 0.6,
+    "importance": 0.5,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  },
+  {
+    "type": "curfew",
+    "nameUk": "Порушення комендантської години",
+    "promptUk": "хтось блукав уночі поза домом",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.5,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "zone"
+    ]
+  },
+  {
+    "type": "trade",
+    "nameUk": "Обмін",
+    "promptUk": "двоє обмінялися предметами",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.3,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "item",
+      "zone"
+    ],
+    "distortable": [
+      "item"
+    ]
+  },
+  {
+    "type": "knockout",
+    "nameUk": "Знепритомнів",
+    "promptUk": "когось побили до непритомності",
+    "visibility": "visual",
+    "loudness": 1.0,
+    "importance": 0.9,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  },
+  {
+    "type": "search",
+    "nameUk": "Обшук",
+    "promptUk": "хтось обшукав іншого через підозру в крадіжці; result=found — знайшов річ, empty — нічого",
+    "visibility": "visual",
+    "loudness": 0.7,
+    "importance": 0.7,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "item",
+      "zone"
+    ],
+    "distortable": [
+      "item"
+    ]
+  },
+  {
+    "type": "recovered",
+    "nameUk": "Знайдено пропажу",
+    "promptUk": "хтось знайшов загублену чи вкрадену річ на місці події",
+    "visibility": "visual",
+    "loudness": 0.5,
+    "importance": 0.6,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "item",
+      "zone"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "story",
+    "nameUk": "Новина в селі",
+    "promptUk": "важлива новина для всього села (оголошення, вибори, сход)",
+    "visibility": "audio",
+    "loudness": 1.2,
+    "importance": 0.9,
+    "background": false,
+    "fields": [
+      "actor",
+      "zone"
+    ],
+    "distortable": []
+  },
+  {
+    "type": "bribe",
+    "nameUk": "Хабар",
+    "promptUk": "хтось брав або давав хабар",
+    "visibility": "visual",
+    "loudness": 0.3,
+    "importance": 0.7,
+    "background": false,
+    "fields": [
+      "actor",
+      "target",
+      "zone"
+    ],
+    "distortable": [
+      "actor"
+    ]
+  }
+]

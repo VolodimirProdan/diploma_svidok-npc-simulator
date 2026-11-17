@@ -1,0 +1,38 @@
+{
+  "id": "s2",
+  "nameUk": "Нічний склад",
+  "descriptionUk": "Чи розповідає NPC про те, чого знати не міг: V1 проти V2–V4",
+  "whatChecksUk": "H2: всезнання, частка утечек MKR, Recall у знаючих",
+  "modes": ["Observer"],
+  "variants": ["V1", "V2", "V3", "V4"],
+  "recommendedVariants": ["V1", "V4"],
+  "map": "default",
+  "population": "default",
+  "extraNpcs": ["zakhar"],
+  "start": { "day": 1, "time": "01:30" },
+  "durationTicks": 300,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "rumorsEnabled": false, "fillerPerNpcPerHour": 6 },
+  "script": [
+    {
+      "tick": 30,
+      "type": "theft",
+      "actor": "zakhar",
+      "item": "silver_cup",
+      "zone": "warehouse",
+      "extra": { "detail": "червона хустка" },
+      "forcedWitnesses": ["vasyl"]
+    },
+    {
+      "tick": 255,
+      "type": "ask",
+      "npcs": ["vasyl", "andrii", "marta", "luka", "ivan", "bohdan", "khrystia", "petro", "orysia", "mykola"],
+      "questions": [
+        "Чи чув ти щось про срібний кубок?",
+        "Хто вночі був біля складу?",
+        "Що нового в селищі?"
+      ]
+    }
+  ],
+  "experiment": { "seeds": [1, 2, 3, 4, 5], "metrics": ["MKR", "Recall"] }
+}

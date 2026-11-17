@@ -1,0 +1,18 @@
+{
+  "id": "s4",
+  "nameUk": "Тиждень у селищі",
+  "descriptionUk": "Ріст журналу і різниця між повним журналом та знаннями одного NPC у токенах",
+  "whatChecksUk": "H1, H5: коефіцієнт стиснення K, обсяг входу",
+  "modes": ["Observer"],
+  "variants": ["V0", "V1", "V4"],
+  "recommendedVariants": ["V0"],
+  "map": "default",
+  "population": "default",
+  "start": { "day": 1, "time": "06:00" },
+  "durationTicks": 10080,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "fillerPerNpcPerHour": 8, "rumorsEnabled": true },
+  "dailyRandomEvent": true,
+  "script": [],
+  "experiment": { "seeds": [1, 2, 3], "metrics": ["K", "tokensFull", "tokensNpc"] }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "s1",
+  "nameUk": "Крадіжка на ринку",
+  "descriptionUk": "Як слух про крадіжку кубка розходиться селом і як падає достовірність",
+  "whatChecksUk": "H4: поширення чуток, T50, T90, середня c, спотворення",
+  "modes": ["Observer"],
+  "variants": ["V0", "V4"],
+  "recommendedVariants": ["V0", "V4"],
+  "map": "default",
+  "population": "default",
+  "start": { "day": 1, "time": "06:00" },
+  "durationTicks": 960,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "fillerPerNpcPerHour": 6 },
+  "script": [
+    {
+      "tick": 240,
+      "type": "theft",
+      "actor": "ostap",
+      "target": "marta",
+      "item": "silver_cup",
+      "zone": "market",
+      "forcedWitnesses": ["halyna"]
+    }
+  ],
+  "experiment": { "seeds": [1, 2, 3], "metrics": ["coverage", "T50", "T90", "meanC", "distorted", "wrongSuspect"] }
+}

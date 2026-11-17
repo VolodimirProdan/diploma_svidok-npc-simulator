@@ -1,0 +1,16 @@
+[
+  { "id": "silver_cup",    "nameUk": "Срібний кубок",   "category": "valuable", "location": "marta",     "ownerId": "marta",   "purposeUk": "S1, S2 — унікальне слово-маркер для перевірки утечек" },
+  { "id": "chest",         "nameUk": "Скриня",          "category": "goods",    "location": "warehouse", "ownerId": null,      "purposeUk": "Завдання S3" },
+  { "id": "grain_sack",    "nameUk": "Мішок зерна",     "category": "goods",    "location": "warehouse", "ownerId": null,      "purposeUk": "Фон, крадіжки" },
+  { "id": "sword",         "nameUk": "Меч",             "category": "valuable", "location": "forge",     "ownerId": null,      "purposeUk": "Фон" },
+  { "id": "warehouse_key", "nameUk": "Ключ від складу", "category": "valuable", "location": "bohdan",    "ownerId": "bohdan",  "purposeUk": "Відкриває закриті двері складу" },
+  { "id": "bread",         "nameUk": "Хліб",            "category": "goods",    "location": "market",    "ownerId": null,      "purposeUk": "Покупки (фон)", "food": 30, "price": 1 },
+  { "id": "red_scarf",     "nameUk": "Червона хустка",  "category": "valuable", "location": "zakhar",    "ownerId": "zakhar",  "purposeUk": "Другий маркер для S2" },
+  { "id": "fish",          "nameUk": "Риба",            "category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Їжа (S6–S8)", "game": true, "food": 35, "price": 2 },
+  { "id": "pie",           "nameUk": "Пиріг",           "category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Їжа (S6–S8)", "game": true, "food": 50, "price": 3 },
+  { "id": "apple",         "nameUk": "Яблуко",          "category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Їжа (S6–S8)", "game": true, "food": 15, "price": 1 },
+  { "id": "wine",          "nameUk": "Глечик вина",     "category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Корчма (S6–S8)", "game": true, "food": 5, "price": 4 },
+  { "id": "ring",          "nameUk": "Срібний перстень","category": "valuable", "location": "",          "ownerId": null,      "purposeUk": "Обмін і торг (S6–S8)", "game": true, "price": 15 },
+  { "id": "letter",        "nameUk": "Лист",            "category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Завдання «передати листа» (S8)", "game": true },
+  { "id": "tools",         "nameUk": "Ковальські кліщі","category": "goods",    "location": "",          "ownerId": null,      "purposeUk": "Завдання для коваля (S8)", "game": true, "price": 5 }
+]

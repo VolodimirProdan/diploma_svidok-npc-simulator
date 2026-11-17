@@ -1,0 +1,400 @@
+{
+  "id": "s8",
+  "nameUk": "Живе село",
+  "descriptionUk": "Велике село з родинами і своїми хатами. У вас є своя хата, голод, підробіток, бійки, комендантська година, торг, підкуп і підстава",
+  "whatChecksUk": "Демонстрація: обмежена обізнаність і перевірка дій у живій грі з економікою та наслідками вчинків",
+  "modes": [
+    "Player",
+    "Observer"
+  ],
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3",
+    "V4"
+  ],
+  "recommendedVariants": [
+    "V4"
+  ],
+  "map": "village_big",
+  "population": "s8",
+  "extraNpcs": [
+    "zakhar"
+  ],
+  "features": {
+    "social": true,
+    "combat": true,
+    "life": true
+  },
+  "zones": [
+    {
+      "id": "tavern",
+      "nameUk": "Корчма",
+      "x0": 2,
+      "y0": 2,
+      "x1": 12,
+      "y1": 9,
+      "neighbours": [
+        "square",
+        "headman_house"
+      ]
+    },
+    {
+      "id": "headman_house",
+      "nameUk": "Хата старости",
+      "x0": 15,
+      "y0": 2,
+      "x1": 20,
+      "y1": 6,
+      "neighbours": [
+        "tavern",
+        "square"
+      ]
+    },
+    {
+      "id": "forge",
+      "nameUk": "Кузня",
+      "x0": 30,
+      "y0": 2,
+      "x1": 38,
+      "y1": 7,
+      "neighbours": [
+        "market",
+        "square",
+        "mill"
+      ]
+    },
+    {
+      "id": "market",
+      "nameUk": "Ринок",
+      "x0": 30,
+      "y0": 10,
+      "x1": 42,
+      "y1": 13,
+      "neighbours": [
+        "forge",
+        "square"
+      ]
+    },
+    {
+      "id": "square",
+      "nameUk": "Площа",
+      "x0": 19,
+      "y0": 12,
+      "x1": 28,
+      "y1": 19,
+      "neighbours": [
+        "tavern",
+        "market",
+        "warehouse",
+        "house_2",
+        "house_3"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "nameUk": "Склад",
+      "x0": 2,
+      "y0": 20,
+      "x1": 10,
+      "y1": 27,
+      "neighbours": [
+        "square",
+        "house_2",
+        "forest"
+      ]
+    },
+    {
+      "id": "guard_tower",
+      "nameUk": "Вартова вежа",
+      "x0": 40,
+      "y0": 19,
+      "x1": 45,
+      "y1": 24,
+      "neighbours": [
+        "market",
+        "house_4",
+        "field"
+      ]
+    },
+    {
+      "id": "house_2",
+      "nameUk": "Хата Мельників",
+      "x0": 14,
+      "y0": 22,
+      "x1": 19,
+      "y1": 26,
+      "neighbours": [
+        "warehouse",
+        "square"
+      ]
+    },
+    {
+      "id": "house_3",
+      "nameUk": "Хата Ковальчуків",
+      "x0": 27,
+      "y0": 22,
+      "x1": 32,
+      "y1": 26,
+      "neighbours": [
+        "square",
+        "pond"
+      ]
+    },
+    {
+      "id": "house_4",
+      "nameUk": "Хата Рибаків",
+      "x0": 40,
+      "y0": 27,
+      "x1": 45,
+      "y1": 30,
+      "neighbours": [
+        "pond",
+        "guard_tower"
+      ]
+    },
+    {
+      "id": "pond",
+      "nameUk": "Ставок",
+      "x0": 33,
+      "y0": 25,
+      "x1": 38,
+      "y1": 30,
+      "neighbours": [
+        "house_3",
+        "house_4"
+      ]
+    },
+    {
+      "id": "mill",
+      "nameUk": "Млин",
+      "x0": 49,
+      "y0": 2,
+      "x1": 56,
+      "y1": 7,
+      "neighbours": [
+        "forge",
+        "player_house",
+        "house_5"
+      ]
+    },
+    {
+      "id": "player_house",
+      "nameUk": "Ваша хата",
+      "x0": 61,
+      "y0": 2,
+      "x1": 66,
+      "y1": 6,
+      "neighbours": [
+        "mill",
+        "house_6"
+      ]
+    },
+    {
+      "id": "house_5",
+      "nameUk": "Хата Шевченків",
+      "x0": 49,
+      "y0": 9,
+      "x1": 56,
+      "y1": 13,
+      "neighbours": [
+        "mill",
+        "house_6",
+        "field"
+      ]
+    },
+    {
+      "id": "house_6",
+      "nameUk": "Хата Гончаренків",
+      "x0": 61,
+      "y0": 9,
+      "x1": 67,
+      "y1": 13,
+      "neighbours": [
+        "player_house",
+        "house_5",
+        "outskirts"
+      ]
+    },
+    {
+      "id": "field",
+      "nameUk": "Поле",
+      "x0": 49,
+      "y0": 19,
+      "x1": 67,
+      "y1": 28,
+      "neighbours": [
+        "house_5",
+        "guard_tower",
+        "outskirts"
+      ]
+    },
+    {
+      "id": "house_7",
+      "nameUk": "Хата Лісників",
+      "x0": 27,
+      "y0": 33,
+      "x1": 33,
+      "y1": 37,
+      "neighbours": [
+        "forest",
+        "house_3"
+      ]
+    },
+    {
+      "id": "forest",
+      "nameUk": "Ліс",
+      "x0": 1,
+      "y0": 32,
+      "x1": 21,
+      "y1": 39,
+      "neighbours": [
+        "house_7",
+        "warehouse"
+      ]
+    },
+    {
+      "id": "outskirts",
+      "nameUk": "Околиця",
+      "x0": 68,
+      "y0": 1,
+      "x1": 70,
+      "y1": 42,
+      "neighbours": [
+        "field",
+        "house_6"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "zone": "forge",
+      "employer": "mykola",
+      "titleUk": "Допомогти Миколі в кузні",
+      "pay": 3
+    },
+    {
+      "zone": "pond",
+      "employer": "stepan",
+      "titleUk": "Наловити риби зі Степаном",
+      "pay": 2
+    },
+    {
+      "zone": "warehouse",
+      "employer": "ivan",
+      "titleUk": "Перенести мішки на складі",
+      "pay": 2
+    },
+    {
+      "zone": "field",
+      "employer": "maksym",
+      "titleUk": "Попрацювати в полі",
+      "pay": 2
+    },
+    {
+      "zone": "mill",
+      "employer": "pavlo",
+      "titleUk": "Змолоти зерно на млині",
+      "pay": 3
+    }
+  ],
+  "start": {
+    "day": 1,
+    "time": "07:00"
+  },
+  "durationTicks": 30240,
+  "player": {
+    "x": 63,
+    "y": 4,
+    "inventory": [
+      "bread"
+    ],
+    "coins": 5,
+    "home": "player_house"
+  },
+  "quests": [
+    {
+      "id": "q_chest",
+      "giver": "bohdan",
+      "titleUk": "Принести скриню зі складу",
+      "requiredItem": "chest",
+      "reward": 10,
+      "initialState": "NotTaken"
+    },
+    {
+      "id": "q_ring",
+      "giver": "kateryna",
+      "titleUk": "Повернути срібний перстень",
+      "requiredItem": "ring",
+      "reward": 8,
+      "initialState": "NotTaken"
+    },
+    {
+      "id": "q_letter",
+      "giver": "ilko",
+      "titleUk": "Принести лист від знахарки Віри",
+      "requiredItem": "letter",
+      "reward": 4,
+      "initialState": "NotTaken"
+    },
+    {
+      "id": "q_tools",
+      "giver": "mykola",
+      "titleUk": "Принести ковальські кліщі від мірошника",
+      "requiredItem": "tools",
+      "reward": 6,
+      "initialState": "NotTaken"
+    }
+  ],
+  "items": [
+    {
+      "id": "fish",
+      "owner": "stepan"
+    },
+    {
+      "id": "pie",
+      "owner": "yaryna"
+    },
+    {
+      "id": "wine",
+      "owner": "bohdan"
+    },
+    {
+      "id": "ring",
+      "owner": "yurko"
+    },
+    {
+      "id": "apple",
+      "owner": "nadiia"
+    },
+    {
+      "id": "tools",
+      "owner": "pavlo"
+    },
+    {
+      "id": "letter",
+      "owner": "vira"
+    }
+  ],
+  "overrides": {
+    "rumorsEnabled": true,
+    "fillerPerNpcPerHour": 4
+  },
+  "script": [
+    {
+      "tick": 300,
+      "type": "spawn",
+      "actor": "zakhar"
+    }
+  ],
+  "experiment": {
+    "seeds": [
+      1
+    ],
+    "metrics": []
+  },
+  "stories": [
+    "headman"
+  ]
+}

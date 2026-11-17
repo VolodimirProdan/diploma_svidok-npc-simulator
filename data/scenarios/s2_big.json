@@ -1,0 +1,39 @@
+{
+  "id": "s2_big",
+  "nameUk": "Нічний склад (великий журнал)",
+  "descriptionUk": "Той самий сценарій після двох ігрових діб без моделі: журнал 1.5–2 МБ",
+  "whatChecksUk": "H2: чи губиться факт у середині довгого контексту",
+  "modes": ["Observer"],
+  "variants": ["V1", "V2", "V3", "V4"],
+  "recommendedVariants": ["V1", "V4"],
+  "map": "default",
+  "population": "default",
+  "extraNpcs": ["zakhar"],
+  "big": true,
+  "start": { "day": 1, "time": "01:30" },
+  "durationTicks": 3180,
+  "player": { "x": 23, "y": 15, "inventory": [], "coins": 0 },
+  "overrides": { "rumorsEnabled": false, "fillerPerNpcPerHour": 8 },
+  "script": [
+    {
+      "tick": 2910,
+      "type": "theft",
+      "actor": "zakhar",
+      "item": "silver_cup",
+      "zone": "warehouse",
+      "extra": { "detail": "червона хустка" },
+      "forcedWitnesses": ["vasyl"]
+    },
+    {
+      "tick": 3135,
+      "type": "ask",
+      "npcs": ["vasyl", "andrii", "marta", "luka", "ivan", "bohdan", "khrystia", "petro", "orysia", "mykola"],
+      "questions": [
+        "Чи чув ти щось про срібний кубок?",
+        "Хто вночі був біля складу?",
+        "Що нового в селищі?"
+      ]
+    }
+  ],
+  "experiment": { "seeds": [1, 2, 3, 4, 5], "metrics": ["MKR", "Recall"] }
+}

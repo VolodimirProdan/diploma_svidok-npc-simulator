@@ -1,0 +1,13 @@
+﻿scenario;variant;seed;finalCoverage;t50;secretBlocked;secretLeaked;promiseBreaks;promiseRejected;itemsFound;arrested;trueCulprit;framed;wrongArrest;rightArrest;noGroundsRejected
+s7_open;V0;1;0.8333;480;0;0;0;0;0;ostap;ostap;;0;1;0
+s7_open;V1;1;0.5;;0;0;0;0;0;halyna;ostap;;0;0;0
+s7_open;V2;1;0.5;;0;0;0;0;0;halyna;ostap;;0;0;0
+s7_open;V3;1;0.5417;290;0;0;0;0;0;marta;ostap;;0;0;0
+s7_open;V4;1;0.9583;180;0;0;0;0;0;ostap;ostap;;0;1;0
+s7_open;V0;2;0.875;520;0;0;0;0;0;ostap;ostap;;0;1;0
+s7_open;V1;2;0.375;;0;1;0;0;0;ostap;ostap;;0;1;0
+s7_open;V2;2;0.9583;100;0;0;0;0;0;marta;ostap;;0;0;0
+s7_open;V3;2;0.5417;460;0;0;0;0;0;marta;ostap;;0;0;0
+s7_open;V4;2;0.5;;0;0;0;0;0;marta;ostap;;0;0;3
+s7_open;V0;3;0.875;440;0;0;0;0;0;ostap;ostap;;0;1;0
+s7_open;V1;3;0.9583;460;2;0;0;0;0;ostap;ostap;;0;1;0

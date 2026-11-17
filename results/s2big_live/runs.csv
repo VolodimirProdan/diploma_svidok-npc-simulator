@@ -1,0 +1,3 @@
+﻿scenario;variant;seed;params;ticks;events;logBytes;llmCalls;promptTokens;cacheHitTokens;completionTokens;costUsd;parseErrors;rejections;durationSec
+s2_big;V1;1;"trust=1;talk=1";3135;6707;1426524;32;9119938;5415424;9476;1.1552;2;0;203.1
+s2_big;V4;1;"trust=1;talk=1";3135;6701;1425347;32;27075;16640;5752;0.0101;0;1;68.13

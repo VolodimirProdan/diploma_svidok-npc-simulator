@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+logs/
+profiles/
+cache/
+imgui.ini
+*.user
+*.suo
+upload_to_github.bat

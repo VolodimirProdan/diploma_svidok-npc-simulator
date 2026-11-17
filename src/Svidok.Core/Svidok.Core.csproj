@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Svidok.Core</RootNamespace>
+    <AssemblyName>Svidok.Core</AssemblyName>
+  </PropertyGroup>
+
+</Project>
